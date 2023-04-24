@@ -1,0 +1,27 @@
+.header {
+  padding-block: 2em;
+  box-shadow: $bShadow;
+
+  // dark
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(245, 247, 250, 0.12),
+  //   rgba(245, 247, 250, 0.06) 53.65%,
+  //   rgba(245, 247, 250, 0.01)
+  // );
+  // border: 1px solid rgba(245, 247, 250, 0.06);
+  // box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25),
+  //   -4px -4px 8px rgba(254, 255, 255, 0.04);
+  // backdrop-filter: blur(40px);
+  &__title {
+    @include flexAndCenter();
+  }
+}
+@media (min-width: $s) {
+  .header {
+    padding-block: 3em;
+    br {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+footer {
+  margin-top: auto;
+  padding-block: 6em;
+  background: #c33764; /* fallback for old browsers */
+  @include gradientBg(right);
+  color: #fff;
+  text-align: center;
+  p + p {
+    margin-top: 1em;
+  }
+}
